@@ -49,7 +49,7 @@ app.put("/completed", async (req, res) => {
     return;
   }
 
-  await todo.update(
+  await todo.updateOne(
     {
       _id: req.body.id,
     },
