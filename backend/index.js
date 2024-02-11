@@ -36,7 +36,6 @@ app.post("/todo", async (req, res) => {
 
 app.get("/todo", async (req, res) => {
   const todos = await todo.find({});
-  console.log(todos);
   res.status(200).json({ todos });
 });
 
